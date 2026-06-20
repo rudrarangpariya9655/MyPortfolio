@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rudra Rangpariya | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden dark">
+<!-- WebGL Background -->
+<canvas id="shader-canvas"></canvas>
+<!-- Particle Background -->
+<div id="particles-container"></div>
+<div class="background-overlay"></div>
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto bg-transparent transition-all duration-500" id="main-nav">
+<div class="font-headline-md text-headline-md tracking-tighter text-primary">AURA</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-primary font-semibold border-b-2 border-primary pb-1 font-body-md text-body-md transition-colors duration-300" href="#home">Portfolio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#skills">Skills</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#contact">Contact</a>
+</div>
+<button class="material-symbols-outlined p-2 rounded-full hover:bg-white/10 transition-all duration-500 text-on-surface" data-icon="light_mode" id="theme-toggle">light_mode</button>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 px-margin-mobile md:px-margin-desktop overflow-hidden bg-mist-overlay" id="home">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center w-full">
+<div class="reveal">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-4 block">Future Software Engineer</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary-container mb-6">
+                    Hi, I'm <span class="text-primary">Rudra Rangpariya</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
+                    5th-semester Computer Engineering student with a 9.60 CGPA. Passionate about software development and building impactful digital experiences.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="btn-primary px-8 py-3 rounded-xl font-label-md text-label-md shadow-lg flex items-center gap-2" href="#contact">
+                        Let's Talk <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="border border-primary/50 text-primary px-8 py-3 rounded-xl font-label-md text-label-md hover:bg-primary/10 transition-all" href="#projects">
+                        View Work
+                    </a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 reveal" style="transition-delay: 200ms;">
+<div class="glass-card p-6 rounded-2xl flex flex-col justify-center items-center text-center animate-float">
+<span class="text-4xl font-bold text-primary mb-2 count-up" data-decimals="2" data-target="9.60">0.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Academic CGPA</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col justify-center items-center text-center mt-8 animate-float-delayed">
+<span class="text-4xl font-bold text-primary mb-2 count-up" data-target="150">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LeetCode Problems</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col justify-center items-center text-center animate-float-delayed">
+<span class="text-4xl font-bold text-primary mb-2 count-up" data-target="5">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semester CE</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col justify-center items-center text-center mt-8 animate-float">
+<span class="material-symbols-outlined text-4xl text-primary mb-2" data-icon="code">code</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aspiring Engineer</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-background/80 backdrop-blur-sm" id="about">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-section-gap items-center">
+<div class="w-full md:w-1/2 reveal">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/20 rounded-3xl blur-xl group-hover:opacity-40 transition-opacity"></div>
+<img alt="A professional portrait of a young Indian male computer engineering student" class="relative rounded-3xl w-full aspect-square object-cover shadow-2xl transition-transform duration-500 group-hover:scale-[1.01] grayscale-[0.2] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwHEWW20L7qKq3pOgg5a-r8EObPmesvwQHyw_03a9FgSGiZVh3ud_S0XsuzrIcYIGbcT20_BmvXql9Ha_cbbyeLaTXpLe7u-llt7urnlpddASLFf4ud-z7ifoDAThA82jf0qCp0FN_DOWYvyqG6P18yR248jMoWG4McusdtWafojXtW2Gjd75fSgC5-RDyAPBn7JttjL_stXEmtX2apDBChekEQRaFVIP5zDYL5EgYbZKUnjWDNvmGa2iPskHt038sJdGuliXyrgo"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 reveal" style="transition-delay: 200ms;">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Mastering the Art of Problem Solving</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        As a dedicated student of Computer Engineering, my journey is driven by a deep curiosity about how systems interact and a relentless drive for efficiency. I focus on bridging the gap between theoretical computer science and practical software solutions.
+                    </p>
+<div class="space-y-4">
+<div class="flex gap-4 items-start group">
+<div class="bg-surface-variant p-2 rounded-lg transition-transform group-hover:rotate-12">
+<span class="material-symbols-outlined text-primary" data-icon="psychology">psychology</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Data Structures &amp; Algorithms</h4>
+<p class="text-on-surface-variant text-sm">Solved over 150+ challenges on LeetCode focusing on optimization and algorithmic efficiency.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start group">
+<div class="bg-surface-variant p-2 rounded-lg transition-transform group-hover:rotate-12">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Polyglot Programmer</h4>
+<p class="text-on-surface-variant text-sm">Expertise in Java, Python, and C++, choosing the right tool for the right architectural challenge.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-mist-overlay" id="skills">
+<div class="max-w-container-max mx-auto text-center mb-16 reveal">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Technical Proficiency</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Specialized skill set focused on robust software foundations and modern web architecture.</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Languages -->
+<div class="glass-card p-8 rounded-3xl reveal" style="transition-delay: 100ms;">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="data_object">data_object</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Languages</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">Java</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">Python</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">C++</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">C</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">C#</span>
+</div>
+</div>
+<!-- Web Tech -->
+<div class="glass-card p-8 rounded-3xl reveal" style="transition-delay: 200ms;">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="web">web</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Web Technologies</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">HTML5</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">CSS3</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">JavaScript</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">Tailwind CSS</span>
+</div>
+</div>
+<!-- Concepts -->
+<div class="glass-card p-8 rounded-3xl reveal" style="transition-delay: 300ms;">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="architecture">architecture</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Core Concepts</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">DSA</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">OOP</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">Problem Solving</span>
+<span class="skill-badge bg-surface-variant text-secondary px-4 py-1.5 rounded-full text-label-sm font-label-sm border border-white/5 cursor-default">Software Design</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="projects">
+<div class="max-w-container-max mx-auto text-center mb-16 reveal">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Featured Projects</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Bridging innovation and execution through code.</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="group relative bg-surface-variant rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 reveal liquid-card">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
+<img alt="DSA Visualizer dashboard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-[0.8] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4UXe2TQrU4atvMaqM7gFqid5RnS8bF-9gjXdsERWxcjEZHyFoWitG_6zrx9dz9vUhswGLHYUXZ-Ey09M5BBb9vtsV6xShQbcvqFjo_rrmfeztdHQkGBRDO-yI09p2irfA7ExhRY1CFMhc4IIvbHoFKFRZVsaOFykbgT7ZDqS_K7YtjyNeCn2Y3wphtrAuXDYIPsZkRC4JuOVau_LCASfc8ZOIOMHwIen7qLYL5euhva2bdJipF2FsGTPK19DRz72d35vvspe4pgY"/>
+</div>
+<div class="p-8 relative z-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">DSA Visualizer</h3>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors social-icon" data-icon="open_in_new">open_in_new</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors social-icon" data-icon="code">code</span>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6">Interactive web application that animates complex sorting and tree algorithms for better learning experiences.</p>
+<div class="flex gap-4">
+<span class="text-xs font-bold text-primary uppercase tracking-tighter">React</span>
+<span class="text-xs font-bold text-primary uppercase tracking-tighter">Canvas API</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative bg-surface-variant rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 reveal liquid-card" style="transition-delay: 200ms;">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
+<img alt="Student Management interface" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-[0.8] group-hover:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKeQexG2vKWRQhGaOhbgHtl9ZWUC2C7yEhlVi5GHkj9DLD1j3p7wpMBmhEyHyGQfONk0B0Dqqh9LP9d5KS69_Fwj3bMnjFQA1NNh1wS8FbXbh0XyPidg0QyZbyGSAYsS-0WjFwT60xSIeYGfCdMLGsX6-gU7UozmSIIhr77v1BdXujmZaVTuPvaJtuXv03pyKBBMkyvc91mR5kLjCzU9p4uX8mxTKdjaG9tayCTkvlx0Z_xx91GN-vx2bS_03y6dpAf13EEUe-gho"/>
+</div>
+<div class="p-8 relative z-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Student Management</h3>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors social-icon" data-icon="open_in_new">open_in_new</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary transition-colors social-icon" data-icon="code">code</span>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6">Full-stack system for managing academic records, attendance, and performance analytics with secure authentication.</p>
+<div class="flex gap-4">
+<span class="text-xs font-bold text-primary uppercase tracking-tighter">Java Spring Boot</span>
+<span class="text-xs font-bold text-primary uppercase tracking-tighter">MySQL</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="glass-card p-8 md:p-16 rounded-[40px] flex flex-col md:flex-row gap-gutter overflow-hidden reveal">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Let's connect</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">I'm always open to discussing software projects, collaborative opportunities, or just sharing insights about engineering.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="mailto:rudrarangpariya.ce@gmail.com">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center group-hover:bg-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-background" data-icon="mail">mail</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">rudrarangpariya.ce@gmail.com</span>
+</a>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center hover:bg-primary transition-all duration-300 group social-icon" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-background" data-icon="link">link</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center hover:bg-primary transition-all duration-300 group social-icon" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-background" data-icon="terminal">terminal</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 mt-8 md:mt-0">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Name</label>
+<input class="w-full bg-white/5 border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-3 text-on-surface placeholder:text-on-surface-variant/40" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Email</label>
+<input class="w-full bg-white/5 border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-3 text-on-surface placeholder:text-on-surface-variant/40" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Subject</label>
+<input class="w-full bg-white/5 border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-3 text-on-surface placeholder:text-on-surface-variant/40" placeholder="Inquiry" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant mb-2 block">Message</label>
+<textarea class="w-full bg-white/5 border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-3 resize-none text-on-surface placeholder:text-on-surface-variant/40" placeholder="Hello Rudra..." rows="4"></textarea>
+</div>
+<button class="btn-primary w-full py-4 rounded-xl font-label-md text-label-md tracking-widest uppercase" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between items-center gap-base border-t border-white/5 bg-background/50 backdrop-blur-md reveal">
+<div class="font-headline-md text-headline-md text-primary">AURA</div>
+<p class="font-label-md text-label-md text-on-surface-variant">© 2024 Rudra Rangpariya. All rights reserved.</p>
+<div class="flex gap-gutter">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">LeetCode</a>
+</div>
+</footer>
+<script src="index.js">
+    </script>
+</body></html>

@@ -1,0 +1,144 @@
+
+      .glass-card {
+        background: rgba(42, 59, 66, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+      }
+      .bg-mist-overlay {
+        background: rgba(30, 43, 48, 0.85);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .btn-primary {
+        background-color: #74A0A4;
+        color: #1E2B30;
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        font-weight: 600;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px -5px rgba(116, 160, 164, 0.4);
+      }
+      .btn-primary:active {
+        transform: scale(0.95);
+      }
+
+      /* Float Animation */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 5s ease-in-out infinite;
+      }
+      .animate-float-delayed {
+        animation: float 5s ease-in-out infinite;
+        animation-delay: 2.5s;
+      }
+
+      /* Particle Layer */
+      #particles-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      .particle {
+        position: absolute;
+        background: rgba(174, 217, 222, 0.15);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      /* Liquid & Glow Hover Effects */
+      .liquid-card {
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        position: relative;
+        overflow: hidden;
+        background: #2A3B42;
+      }
+      .liquid-card::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(116, 160, 164, 0.15) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none;
+      }
+      .liquid-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+      }
+      .liquid-card:hover::after {
+        opacity: 1;
+        animation: rotate 8s linear infinite;
+      }
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      #shader-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+        filter: brightness(0.6) contrast(1.1);
+      }
+      .background-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(circle at center, transparent 0%, rgba(30, 43, 48, 0.4) 100%);
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      nav.scrolled {
+        background: rgba(30, 43, 48, 0.9) !important;
+        backdrop-filter: blur(20px) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+      }
+
+      /* Hover states for badges and icons */
+      .skill-badge {
+        transition: all 0.3s ease;
+      }
+      .skill-badge:hover {
+        background-color: rgba(116, 160, 164, 0.2);
+        border-color: #74A0A4;
+        transform: translateY(-2px);
+      }
+      .social-icon {
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .social-icon:hover {
+        transform: translateY(-4px) scale(1.1);
+        color: #74A0A4 !important;
+      }
